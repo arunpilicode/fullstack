@@ -1,13 +1,26 @@
 
 body
     {
-background:greenyellow
+background:greenyellow;
     }
 
 .mytr{
-background:red
+background:#ecf0f1;
 }
 .bn
 {
     background: greenyellow
 }
+
+.marginclas{
+margin-left: 200px;
+}
+
+.mydiv
+{
+    border: 2px solid black;
+    background: #95a5a6;
+    width:200px;
+    margin-left: 500px;
+}
+
