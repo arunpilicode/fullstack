@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+
+
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 	 
+ 	 	<a class="navbar-brand" href="#">Logo</a>
+ 	 	<ul class="navbar-nav mr-auto">
+    		<li class="nav-item">
+      			<a class="nav-link" href="index.html">Home</a>
+    		</li>
+    		<li class="nav-item">
+     			 <a class="nav-link" href="about.html">About</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="service.html">Service</a>
+    		</li>
+  		</ul>
+  		
+  		<form class="form-inline " action="#">
+    		<input class="form-control" type="text" placeholder="Search">
+    		<button class="btn btn-success" type="submit" onclick="test()">Search</button>
+  		</form>
+	</nav> 
+	<br>
+	
+	 
+		
+	<div class="container-fluid"><br><br>
+		<p class="text-center text-warning">please register to use services</p>
+		<div class="container card">
+					
+					
+				  	<form><br>
+				  	<div class="form-group row">
+            			<div class="col-sm-6"><label>Name</label></div>
+            			<div class="col-sm-6"><input type="text" class="form-control" id="name" required/></div></div></br>
+        			<div class="form-group row">
+        				<div class="col-sm-6"><label>Address</label></div>
+        				<div class="col-sm-6"><textarea rows="4" cols="50" class="form-control" id ="address"></textarea></div></div>
+        			<div class="form-group row">
+        				<div class="col-sm-6"><label>Gender</label></div>
+        				<div class="col-sm-6"><input type="radio"  name="gender" value="male" class="radio" id="gender">Male<input type="radio"  name="gender" value="female" class="radio" id="gender">Female</div></div>
+        			<div class="form-group row">
+        				<div class="col-sm-6"><label>Age</label></div>
+        				<div class="col-sm-6"><input type="number" class="form-control" id="age" /></div></div>
+        			<div class="form-group row">
+        				<div class="col-sm-6"><label>DOB</label></div>
+        				<div class="col-sm-6"><input type="date" class="form-control" id="dob" /></div></div>
+        			<div class="form-group row">
+        				<div class="col-sm-6"><label>Mobile</label></div>
+        				<div class="col-sm-6"><input type="number" class="form-control" id="dob" /></div></div>		
+        			<div class="form-group row">
+       					<div class="col-sm-6">District</div>
+       					<div class="col-sm-6 form-group">
+       					    <select id="distrct" class="form-control">
+       					        <option value="1">Trivandrum</option>
+       					        <option value="2">Kollam</option>
+       					        <option value="3">Pathanamthitta</option>
+       					        <option value="4">Kottayam</option>
+       					        <option value="5">Alapuzha</option>
+       					        <option value="6">Ernakulam</option>
+       					        <option value="7">Thrissur</option>
+       					        <option value="8">Malapuram</option>
+       					        <option value="9">Palakkad</option>
+       					        <option value="10">Kozhikode</option>
+       					        <option value="11">Wayanad</option>
+       					        <option value="12">Kannur</option>
+       					        <option value="13">Kasargod</option>
+       					        <option value="14">Idukki</option>
+       					    </select>
+       					</div>
+       				</div>	
+        			<div class="form-group row">
+            			<div class="col-sm-6"><label>User Name</label></div>
+            			<div class="col-sm-6"><input type="text" class="form-control" id="username" required/></div></div></br>		
+        			<div class="form-group row">
+				    	<div class="col-sm-6"><label for="email">Email address:</label></div>
+				    	<div class="col-sm-6"><input type="email" class="form-control" id="email" required></div></div>
+				  	<div class="form-group row">
+				    	<div class="col-sm-6"><label for="pwd">Password:</label></div>
+				    	<div class="col-sm-6"><input type="password" class="form-control" id="pwd " required></div>
+				  	</div>		
+				  	<div class="form-group row">
+				    	<div class="col-sm-6"><label for="pwd">Confirm Password:</label></div>
+				    	<div class="col-sm-6"><input type="password" class="form-control" id="confrmpwd" required></div>
+				  	</div>	
+				  	<div class="form-group row">
+				  	<div class="col-sm-12"><button type="button" class="btn btn-primary" onclick="read()">Submit</button></div></br>
+			  
+					</form>
+			</div>	
+		</div>
+	</body>
+</html>
