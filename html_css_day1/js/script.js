@@ -47,23 +47,25 @@ function result()
         {
             if(x>z)
             {
-                console.log(x);
+                var res=x;
             }
             else
             {
-                console.log(z);
+                var res=y;
             }
         }
 
 
         if(y>z)
         {
-            console.log(y);
+            var res=y;
 
         }
-        else{
-            console.log(z);
+        else
+        {
+            var res=z;
         }
+        document.getElementById("result1").innerHTML=res;
     }
 
 
@@ -81,21 +83,25 @@ function result()
         {
             if(x<z)
             {
-                console.log(x);
+               var res=x;
             }
             else
             {
-                console.log(z);
+                var res=z;
+                
             }
         }
 
 
         if(y<z)
         {
-            console.log(y);
+            var res=y;
 
         }
-        else{
-            console.log(z);
+        else
+        {
+            var res=z;
         }
+
+        document.getElementById("result1").innerHTML="<table><tr><td>Result is:</td><td>res</td></tr></table>";
     }

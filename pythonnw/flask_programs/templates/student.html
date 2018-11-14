@@ -1,0 +1,22 @@
+{% extends 'layouts.html' %}
+
+{% block myContent %}
+ <h1>ICT students details</h1>
+
+ {% for students in myStudentList %}
+
+ <ul class="list-group">
+     <li class="list-group-item"><strong>ID:</strong> {{students.id}} </li>
+     <li class="list-group-item"><strong>NAME:</strong> {{students.name}} </li>
+     <li class="list-group-item"><strong>EMAIL:</strong> {{students.email}} </li>
+     <li class="list-group-item"><strong>place:</strong> {{students.place}} </li>
+     <li class="list-group-item"><strong>mobile:</strong> {{students.mobile}} </li>
+     <li class="list-group-item"><strong>Date of joining:</strong> {{students.joineddate}} </li>
+     <br>
+ </ul>
+
+
+
+{% endfor %}
+
+{% endblock %}
